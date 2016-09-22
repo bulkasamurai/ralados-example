@@ -1,0 +1,302 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+}
+
+body, html {
+    height: 100%;
+    color: #585858;
+    line-height: 1.8;
+    font-size: calc((100vw - 480px) / (1920 - 480) * (15 - 9) + 9px);
+}
+
+body {
+    padding-right: 0 !important;
+}
+
+body.modal-open {
+    height: auto;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../img/bg-paralax-1.jpg');
+    min-height: 500px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../img/bg-paralax-2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../img/bg-paralax-3.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+    background-image: url("../img/bg-paralax-4.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    transition: 0.5s;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+#googleMap:hover {
+    width: 100%;
+    height: 400px;
+    transition: 0.5s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.w3-content {
+    max-width: 100%;
+    padding: 7%;
+}
+
+/*modal services*/
+.modal {
+    overflow: hidden;
+}
+
+.modal-content {
+    margin-top: 100px !important;
+    border-radius: 6px !important;
+    background-color: rgb(56, 145, 89);
+}
+
+.modal-dialog {
+    border-radius: 6px !important;
+}
+
+.modal-body, .modal-footer {
+    background-color: #fff !important;
+}
+
+.modal-body img {
+    width: 500px;
+}
+
+/*modal services*/
+
+/*modal*/
+.w3-modal {
+    z-index: 1000;
+    padding-top: 0;
+}
+
+#modal01 {
+    margin-top: 40px;
+}
+
+/*modal*/
+
+#stm {
+    width: 100px;
+}
+
+#stm_btn {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*bootstrap*/
+#myNavbar a {
+    color: rgba(0, 63, 16, 0.86);
+}
+
+#myNavbar a:focus {
+    color: #ffffff !important;
+}
+
+#myNavbar a:hover {
+    color: #ffffff !important;
+    background-color: rgba(0, 63, 16, 0.86) !important;
+}
+
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
+    color: #ffffff !important;
+    background-color: rgba(0, 63, 16, 0.86) !important;
+}
+
+.logo {
+    color: rgba(0, 63, 16, 0.86);
+    font-size: 200px;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+#about, #services, #stuff, #feedback, #contact, #pricing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #393939;
+}
+
+#stuff, .stuff_section {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+/*слайдер*/
+.carousel-control {
+    width: 5% !important;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+
+.carousel-indicators {
+    bottom: -40px !important;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+/*слайдер*/
+
+span.glyphicon-chevron-up {
+    font-size: 1.8em !important;
+}
+
+.container-fluid {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.row {
+    margin: 30px !important;
+    margin: 30px !important;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+
+.img_opacity:hover {
+    opacity: 0.60;
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* отключение паралакса */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+
+    .logo {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    #feedback, #certs {
+        display: none;
+    }
+
+    #CalculatorForm input {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 630px) {
+    .col-xs-12 {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .row {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .col-xs-3 img {
+        width: 50px !important;
+    }
+
+    .logo {
+        display: none !important;
+    }
+}

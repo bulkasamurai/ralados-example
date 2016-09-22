@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ralados</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-2.2.2.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/87625a7910.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" id="Navbar_section">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage"><img src="img/logo.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">О НАС</a></li>
+                <li><a href="#services">УСЛУГИ</a></li>
+                <li><a href="#stuff">СОТРУДНИКИ</a></li>
+                <li><a href="#feedback">ОТЗЫВЫ</a></li>
+                <li><a href="#pricing">ЦЕНЫ</a></li>
+                <li><a href="#contact">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Банер -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <img src="img/mainlogo.png" class="img-responsive center">
+    </div>
+</div>
+
+<!-- О нас -->
+<div class="container-fluid" id="about">
+    <div class="w3-content">
+        <h3 class="w3-center">О компании</h3>
+        <h4><p class="w3-center"><em>Везёт тем, кто с нами везёт!</em></p></h4>
+        <p>Унитарное предприятие «РАЛАДОС» успешно работает на рынке транспортно-экспедиционных услуг с 1998
+            г.
+            За весь период деятельности мы приобрели богатый опыт в оказании комплекса услуг, необходимых для
+            транспортировки грузов по схеме «от двери до двери».
+            Наша задача - максимально освободить заказчика от решения вопросов, связанных с доставкой его груза.
+            Специалисты «РАЛАДОС» помогут вам :</p>
+        <ul>
+            <li>выстроить удобную схему перевозки с привлечением необходимого транспорта (авто, авиа, ж/д, море) как
+                сборного,так и комплектного груза
+            </li>
+            <li>оформить транспортные и таможенные документы</li>
+            <li>при необходимости подобрать наиболее подходящий вид страхования</li>
+        </ul>
+        Наша компания является официальным дилером программных средств для железнодорожных перевозок,от
+        разработчиков специализированных программ- «СТМ» ,в Республике Беларусь <a href="http://ctm.ru">ctm.ru</a> <br>
+        <div class="w3-row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8 slideanim">
+                <button class="btn btn-default" data-toggle="modal" data-target="#Modal_STM" id="stm_btn">СТМ Rail-Тариф</button>
+                <p>Обращаясь к нам, вы получаете профессиональную помощь в вопросах транспортной логистики, в
+                    особенности,
+                    если
+                    перевозка является первой в истории вашей организации. У «РАЛАДОС» сложились стабильные отношения со
+                    многими
+                    компаниями, получившими нашу консультацию по первой перевозке, и теперь они активно возят все больше
+                    и
+                    больше грузов с нами.<br>
+                    Мы искренне желаем нашим клиентам удачи и процветания в бизнесе.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Услуги -->
+<div class="bgimg-2 container-fluid" id="services">
+    <div class="text-center">
+        <h2 class="slideanim">Мы предлагаем</h2>
+        <br>
+        <div class="services">
+            <div class="row slideanim">
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_one">
+                        <img src="img/icon1.png" style="width:100px" data-toggle="tooltip"
+                             title="Автомобильные грузоперевозки" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal tooltip" data-target="#Modal_two">
+                        <img src="img/icon2.png" style="width:100px" data-toggle="tooltip"
+                             title="Морские и авиаперевозки" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_three">
+                        <img src="img/icon3.png" style="width:100px" data-toggle="tooltip"
+                             title="Железнодорожные грузоперевозки" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_four">
+                        <img src="img/icon4.png" style="width:100px" data-toggle="tooltip"
+                             title="Составление схемы перевозки и расчёт груза" class="img_opacity">
+                    </span>
+                </div>
+            </div>
+            <div class="row slideanim">
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_five">
+                        <img src="img/icon5.png" style="width:100px" data-toggle="tooltip"
+                             title="Контроль транспортировки грузов" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_six">
+                        <img src="img/icon6.png" style="width:100px" data-toggle="tooltip"
+                             title="Помощь в оформлении товаросопроводительных документов" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_seven">
+                        <img src="img/icon7.png" style="width:100px" data-toggle="tooltip"
+                             title="Складские услуги в Европе" class="img_opacity">
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <span data-toggle="modal" data-target="#Modal_eight">
+                        <img src="img/icon8.png" style="width:100px" data-toggle="tooltip"
+                             title="Таможенное оформление и Страхование" class="img_opacity">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальные окна "услуги" -->
+<div class="modal fade" id="Modal_STM" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">СТМ Rail-Тариф</h4>
+            </div>
+            <div class="modal-body">
+                <h2>«СТМ» — один из крупнейших разработчиков программного обеспечения для ж/д логистики и ВЭД</h2>
+                <p>За 20 лет с момента основания «СТМ» прошла путь от небольшой компании до крупной структуры с
+                    региональными отделениями и дилерской сетью, охватывающей всю Россию и страны СНГ. Сегодня «СТМ» —
+                    один из лидеров в отрасли разработки специализированного ПО, результаты работы компании отмечены
+                    значимыми правительственными и международными премиями.</p>
+                <p>«СТМ» является присоединенным предприятием Организации сотрудничества железных дорог (ОСЖД),
+                    официальным участником «Евразийского Делового Совета» и ассоциированным членом Координационного
+                    Совета по Транссибирским перевозкам (КСТП). Среди клиентов компании — ФТС России, Федеральная служба
+                    по тарифам, ОАО «РЖД» и другие крупные государственные и частные структуры. Программные продукты
+                    «СТМ» установлены в более чем 11 000 организаций в 37 странах мира, а общее число пользователей
+                    превышает 150 000.</p>
+                <a href="http://ctm.ru"><img src="img/logo-ctm.png" id="stm"></a>
+                <h2>СТМ Rail-Тариф</h2>
+                <p>«Rail-Тариф» является удобным и точным инструментом для расчета железнодорожной провозной платы за
+                    перевозку грузов по территории России, стран СНГ, Латвии, Литвы, Эстонии и Грузии.</p>
+                <p>Процесс расчета максимально автоматизирован. Удобный современный интерфейс позволяет в одном окне
+                    просматривать исходные данные, результаты и подробности расчета с возможностью перехода на
+                    регламентирующий документ в программе «Rail-Инфо». Предусмотрены сохранение, печать и экспорт
+                    данных.</p>
+                <p>На сегодняшний день «Rail-Тариф» не имеет аналогов по скорости внесения изменений и выпуска версий и
+                    отличается разнообразием вариантов обновления через Интернет.</p>
+                <p>Автоматически определяются:</p>
+                <ul>
+                    <li>тарифные правила расчета в зависимости от станции и страны отправления/назначения;</li>
+                    <li>пункты перехода между странами с учетом плана формирования вагонов/контейнеров;</li>
+                    <li>нормативный срок доставки;</li>
+                    <li>дополнительные понижающие/повышающие коэффициенты, исключительные тарифы, спецставки и некоторые
+                        сборы.
+                    </li>
+                </ul>
+                <p>В состав программы «Rail-Тариф» включен дополнительный модуль «Rail-Доп.сборы», автоматически
+                    рассчитывающий плату за пользование вагонами и контейнерами, плату за нахождения вагонов и
+                    контейнеров на ж/д путях общего пользования, сборы за подачу/уборку вагонов, штрафы за задержку
+                    вагонов.</p>
+                <p>Программа доступна на русском и английском языках.</p>
+                <p>При первой установке программа работает 14 дней без ограничений.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_one" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Автомобильные грузоперевозки</h4>
+            </div>
+            <div class="modal-body">
+                <p>Заказ и подача подвижного состава необходимых типоразмеров и габаритов для транспортировки любых
+                    грузов с их доставкой на место назначения точно в срок (в том числе мелких партий грузов).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_two" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Морские и авиаперевозки</h4>
+            </div>
+            <div class="modal-body">
+                <p>Мультимодальные перевозки - это грузовые перевозки, осуществимые различными видами транспорта:
+                    - Морским, Автомобильным, Авиационным.
+                    Запрос ставки на МП грузов FCL , а также LCL,Вы можете осуществить через e-mail, телефонный звонок
+                    или SKYPE нашему сотруднику , который профессионально проконсультирует Вас не только по цене, но и
+                    по всем нюансам данной перевозки.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_three" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Железнодорожные грузоперевозки</h4>
+            </div>
+            <div class="modal-body">
+                <p>Железнодорожные грузоперевозки – самый надежный и экономичный вид перевозки грузов. Использование
+                    железнодорожного транспорта дает возможность доставки грузов в больших объемах и на дальние
+                    расстояния, в том числе в труднодоступные регионы, где другие виды перевозок практически исключены.
+                    Железнодорожные грузоперевозки имеют невысокую стоимость при возможности транспортировки большого
+                    количества разнообразных грузов. Они предлагают большие возможности, чем автомобильные
+                    грузоперевозки, быстрее морских и дешевле авиаперевозок!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_four" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Составление схемы перевозки и расчёт груза</h4>
+            </div>
+            <div class="modal-body">
+                <p>Опытные менеджеры-экспедиторы нашей компании выберут оптимальную схему перевозки груза по условиям
+                    заказчика, а также вид транспорта. Предоставят расчет рациональной загрузки транспортных средств,
+                    схем размещения и укрепления грузов на транспорте.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_five" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Контроль транспортировки грузов</h4>
+            </div>
+            <div class="modal-body">
+                <p>При осуществлении перевозок наши сотрудники по просьбе клиента отслеживают продвижение грузов в
+                    режиме реального времени, уведомляют заказчика об отправлении, местонахождении и прибытии груза.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_six" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Помощь в оформлении товаросопроводительных документов</h4>
+            </div>
+            <div class="modal-body">
+                <p>Помощь в оформлении товаросопроводительных документов.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_seven" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Складские услуги в Европе</h4>
+            </div>
+            <div class="modal-body">
+                <p>Складские услуги на территории Литвы, Германии, Польши:
+                    - услуги по выгрузке/погрузке, подготовке груза к отправке, хранению, сортировке, снятию лишней
+                    упаковки, накоплению груза, формированию партий груза по заявке клиента, таможенному оформлению.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal_eight" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Таможенное оформление и Страхование</h4>
+            </div>
+            <div class="modal-body">
+                Таможенное оформление<br>
+                Консультации и оказание помощи по следующим вопросам страхования:
+                <ul>
+                    <li>Добровольное страхование гражданской ответственности перевозчика.</li>
+                    <li>Страхование транспортных средств (авто-каско).</li>
+                    <li>Страхование гражданской ответственности владельцев транспортных средств для выезда за рубеж
+                        ("Зеленая карта")
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Сотрудники -->
+<div id="stuff" class="container-fluid text-center bg-grey">
+    <h2 class="slideanim">Сотрудники</h2>
+    <div id="stuffCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Индикаторы -->
+        <ol class="carousel-indicators">
+            <li data-target="#stuffCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#stuffCarousel" data-slide-to="1"></li>
+            <li data-target="#stuffCarousel" data-slide-to="2"></li>
+            <li data-target="#stuffCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- обертка для слайдера -->
+        <div class="carousel-inner slideanim" role="listbox">
+            <div class="item active">
+                <p>Экспедиция</p>
+                <div class="container-fluid row stuff_section">
+                    <div class="col-sm-3">
+                        <p><strong>Пронович Олег</strong></p>
+                        <p class="spec">(АВИА, МОРЕ, СБОРНЫЕ ГРУЗЫ, АВТО)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 176-07-30</p>
+                        <p><a href="mailto:exp4@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp4@ralados.by</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p><strong>Трипуз Алла</strong></p>
+                        <p class="spec">(Ж/Д)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 780796</p>
+                        <p><a href="mailto:exp14@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp14@ralados.by</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p><strong>Филатова Дарья</strong></p>
+                        <p class="spec">(СТМ)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (44) 744-07-33</p>
+                        <p><a href="mailto:exp5@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp5@ralados.by</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p><strong>Модулев Сергей</strong></p>
+                        <p class="spec">(АВТО)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 629-81-87</p>
+                        <p><a href="mailto:exp21@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp21@ralados.by</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Собственный транспорт</p>
+                <div class="container-fluid row stuff_section">
+                    <div class="col-sm-4">
+                        <p><strong>Леончик Елена</strong></p>
+                        <p class="spec">(СОБСТВЕННЫЙ ТРАНСПОРТ,ЭКСПЕДИЦИЯ)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 676-07-95</p>
+                        <p><a href="mailto:leonchik@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            leonchik@ralados.by</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>Загребина Татьяна</strong></p>
+                        <p class="spec">(СОБСТВЕННЫЙ ТРАНСПОРТ, ЭКСПЕДИЦИЯ)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 676-07-95</p>
+                        <p><a href="mailto:zagr@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            zagr@ralados.by</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>Таран Дмитрий</strong></p>
+                        <p class="spec">(СОБСТВЕННЫЙ ТРАНСПОРТ, ЭКСПЕДИЦИЯ)</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 676-07-93</p>
+                        <p><a href="mailto:exp9@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp9@ralados.by</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Администрация</p>
+                <div class="container-fluid row stuff_section">
+                    <div class="col-sm-4">
+                        <p><strong>Хомич Григорий Яковлевич</strong></p>
+                        <p class="spec">Директор</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 333-31-73</p>
+                        <p><a href="mailto:director@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            director@ralados.by</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>Кандрашова Ольга Владимировна</strong></p>
+                        <p class="spec">Первый заместитель директора</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 651-35-99</p>
+                        <p><a href="mailto:o.kandrashova@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            o.kandrashova@ralados.by</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>Ермоленко Александр</strong></p>
+                        <p class="spec">Заместитель директора по коммерческим вопросам</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 678-07-99</p>
+                        <p><a href="mailto:sborka@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            sborka@ralados.by</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Администрация</p>
+                <div class="container-fluid row stuff_section">
+                    <div class="col-sm-6">
+                        <p><strong>Тылец Елена Евгеньевна</strong></p>
+                        <p class="spec">Главный бухгалтер</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (44) 722-99-35</p>
+                        <p><a href="mailto:exp10@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            exp10@ralados.by</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>Михайловская Марина</strong></p>
+                        <p class="spec">Ведущий юрисконсульт</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +375 (29) 309-24-92</p>
+                        <p><a href="mailto:lawyer@ralados.by"><span class="glyphicon glyphicon-envelope"></span>
+                            lawyer@ralados.by</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- навигация влево и вправо -->
+        <a class="left carousel-control" href="#stuffCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#stuffCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Сертификаты -->
+<div class="bgimg-3 w3-content w3-container w3-padding-64" id="certs">
+    <h3 class="w3-center">Сертификаты</h3>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="img/certs/cert1.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert2.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert3.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert4.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img src="img/certs/cert5.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert6.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert7.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/certs/cert8.jpg" style="width:100px" onclick="onClick(this)" class="img_opacity">
+        </div>
+    </div>
+</div>
+
+<!-- Отзывы -->
+<div id="feedback" class="container-fluid text-center bg-grey">
+    <h2 class="slideanim">Отзывы клиентов</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Индикаторы -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- обертка для слайдера -->
+        <div class="carousel-inner slideanim" role="listbox">
+            <div class="item active">
+                <h4>"Вау! Как круто!"<br><span style="font-style:normal;">Евгений</span>
+                </h4>
+            </div>
+            <div class="item">
+                <h4>"Вы модоцы!"<br><span style="font-style:normal;">Светлана</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Спасибо вам!"<br><span style="font-style:normal;">Виктор</span>
+                </h4>
+            </div>
+        </div>
+        <!-- навигация влево и вправо -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<!-- Модальное окно-->
+<div id="modal01" class="w3-modal w3-dark-grey" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-32">
+        <img id="img01" style="max-width:400px">
+    </div>
+</div>
+
+<!--Цены-->
+<div class="bgimg-4 container-fluid" id="pricing">
+    <h2 class="text-center slideanim">Выберите тарифный план, который вам подходит</h2>
+    <div class="row slideanim">
+        <div class="col-sm-1 col-xs-12">
+        </div>
+        <div class="col-sm-10 col-xs-12">
+            <a href="https://www.avtodispetcher.ru/distance/" id="avtd-embed-link">Определить расстояние по автотрассе c
+                Автодиспетчер.Ру</a>
+            <script src="https://www.avtodispetcher.ru/distance/export/frame.js"></script>
+            <script>avtodispetcher_distance_frame.setLanguage("ru");
+            avtodispetcher_distance_frame.setWidth('100%');</script>
+            <script>avtodispetcher_distance_frame.setCss('http://localhost/Ralados_PARALAX/css/style.css');</script>
+        </div>
+        <div class="col-sm-1 col-xs-12">
+        </div>
+    </div>
+</div>
+
+<!-- Контакты -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center slideanim">Контакты</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Свяжитесь с нами</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 220138, г.Минск, пер.Липковский, 12, оф. 214 </p>
+            <p><span class="glyphicon glyphicon-phone"></span> +375 (17) 276-07-93</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +375 (17) 276-07-94</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +375 (17) 276-07-96</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +375 (17) 276-07-98</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +375 (17) 276-07-99</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> ralados@ralados.by</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <form class="col-sm-6 form-group" action="mailto:info@ralados.com" method="post" enctype="text/plain">
+                <input class="form-control" id="name" name="name" placeholder="Имя" type="text" required>
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <input class="form-control" id="phone" name="phone" placeholder="Телефон" type="number" required>
+            </form>
+            <div class="col-sm-6 form-group">
+                <textarea class="form-control" id="comments" name="comments" placeholder="Комментарий" rows="5">
+                </textarea><br>
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Карты Google API-->
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDM3Vh7VuCNJh_D_iQ70pabY6Ja8nO0Yh8"></script>
+<script>
+    var myCenter = new google.maps.LatLng(53.919119, 27.699550);
+
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 12,
+            scrollwheel: false,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+
+        google.maps.event.addDomListener(window, "resize", function() {
+            var center = map.getCenter();
+            google.maps.event.trigger(map, "resize");
+            map.setCenter(center);
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+    <div class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </div>
+    <p>
+        Copyright © 2008-20014 Ralados Communications Ltd. All rights reserved <a href="http://www.ralados.by">www.ralados.by</a>
+    </p>
+</footer>
+
+<script>
+    // Фото галерея
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+    }
+
+    // Изменение навбара
+    window.onscroll = function () {
+        myFunction()
+    };
+    function myFunction() {
+        var navbar = document.getElementById("Navbar_section");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "container" + " w3-animate-top";
+        } else {
+            navbar.className = navbar.className.replace("w3-animate-top", "");
+        }
+    }
+</script>
+
+</body>
+</html>
+
